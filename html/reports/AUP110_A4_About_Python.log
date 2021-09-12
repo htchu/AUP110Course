@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "/home/htchu/.local/lib/python3.8/site-packages/jupyter_cache/executors/utils.py", line 51, in single_nb_execution
+    executenb(
+  File "/home/htchu/.local/lib/python3.8/site-packages/nbclient/client.py", line 1117, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/home/htchu/.local/lib/python3.8/site-packages/nbclient/util.py", line 78, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/home/htchu/.local/lib/python3.8/site-packages/nbclient/util.py", line 57, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/lib/python3.8/asyncio/base_events.py", line 616, in run_until_complete
+    return future.result()
+  File "/home/htchu/.local/lib/python3.8/site-packages/nbclient/client.py", line 558, in async_execute
+    await self.async_execute_cell(
+  File "/home/htchu/.local/lib/python3.8/site-packages/nbclient/client.py", line 862, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/home/htchu/.local/lib/python3.8/site-packages/nbclient/client.py", line 765, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# PEP 526: Syntax for variable annotations
+primes: List[int] = []
+captain: str  # Note: no initial value!
+class Starship:
+    stats: Dict[str, int] = {}
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m/tmp/ipykernel_677/2261811807.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;31m# PEP 526: Syntax for variable annotations[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mprimes[0m[0;34m:[0m [0mList[0m[0;34m[[0m[0mint[0m[0;34m][0m [0;34m=[0m [0;34m[[0m[0;34m][0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0mcaptain[0m[0;34m:[0m [0mstr[0m  [0;31m# Note: no initial value![0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0;32mclass[0m [0mStarship[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m     [0mstats[0m[0;34m:[0m [0mDict[0m[0;34m[[0m[0mstr[0m[0;34m,[0m [0mint[0m[0;34m][0m [0;34m=[0m [0;34m{[0m[0;34m}[0m[0;34m[0m[0;34m[0m[0m
+
+[0;31mNameError[0m: name 'List' is not defined
+NameError: name 'List' is not defined
+

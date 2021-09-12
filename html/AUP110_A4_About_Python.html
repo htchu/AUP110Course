@@ -1,0 +1,568 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About_Python 關於Python程式設計 &#8212; AUP110-Fundamentals of Programming</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="程式相關語彙 Programming vocabulary" href="AUP110_A5_ProgrammingTerms.html" />
+    <link rel="prev" title="程式相關語彙 Programming vocabulary" href="AUP110_A3_ProgrammingTerms.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">AUP110-Fundamentals of Programming</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A1_Syllabus.html">
+   基礎程式設計(一)-EE300044
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A2_KissipoLearning.html">
+   啟思博學習法(KissipoLearning)：簡簡單單學會寫程式
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A3_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   About_Python 關於Python程式設計
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A5_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W1_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Exercise.html">
+   計算score.txt分數在0-40, 41-59, 60-80, 80-100的人數
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Questions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_M0_Hints.html">
+   AU Fundamentals of Python Programming-110-考試重點提示
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_M1_Problems.html">
+   AU Fundamentals of Python Programming-110-M1題庫(32)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/AUP110_A4_About_Python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAUP110_A4_About_Python.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/AUP110_A4_About_Python.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python">
+   Python官方文件
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Python 官方教學
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Python的版本
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-3-3-virtual-environment">
+     Python 3.3 新功能：虛擬環境 (Virtual environment)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python-3-6-f-f-strings">
+     Python 3.6 新功能：f字串 (f-strings)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pep-python-enhancement-proposals">
+   PEP-Python Enhancement Proposals
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#anaconda">
+   Anaconda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-notebook">
+   Jupyter notebook
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#colab">
+   Colab
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-idle-integrated-development-and-learning-environment">
+   Python IDLE — (Integrated Development and Learning Environment)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spyder-ide">
+   Spyder IDE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pycharm-the-python-ide-for-professional-developers">
+   PyCharm-The Python IDE for Professional Developers
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="about-python-python">
+<h1>About_Python 關於Python程式設計<a class="headerlink" href="#about-python-python" title="Permalink to this headline">¶</a></h1>
+<p><img alt="image" src="https://www.python.org/static/img/python-logo.png" /></p>
+<div class="section" id="python">
+<h2>Python官方文件<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://docs.python.org/zh-tw/3/contents.html">https://docs.python.org/zh-tw/3/contents.html</a></p>
+</div>
+<div class="section" id="id1">
+<h2>Python 官方教學<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://docs.python.org/zh-tw/3/tutorial/index.html">https://docs.python.org/zh-tw/3/tutorial/index.html</a></p>
+<ol class="simple">
+<li><p>Python直譯器</p></li>
+<li><p>Python變數和計算</p></li>
+<li><p>Python流程控制</p></li>
+<li><p>Python資料結構</p></li>
+<li><p>Python模組</p></li>
+<li><p>Python輸入和輸出</p></li>
+<li><p>Python錯誤和例外</p></li>
+<li><p>Python類別</p></li>
+<li><p>Python標準函式庫</p></li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2>Python的版本<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><strong>Sunsetting Python 2</strong>: Python軟體基金會在2020年的1月1日，正式終止對Python 2.7程式語言的支援，呼籲用戶應儘快遷移到Python 3.0。 Python基金會是在2000年發表Python 2.0，在2006年釋出Python 3.0。</p>
+<div class="section" id="python-3-3-virtual-environment">
+<h3>Python 3.3 新功能：虛擬環境 (Virtual environment)<a class="headerlink" href="#python-3-3-virtual-environment" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="python-3-6-f-f-strings">
+<h3>Python 3.6 新功能：f字串 (f-strings)<a class="headerlink" href="#python-3-6-f-f-strings" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>python –V ​
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>python: can&#39;t open file &#39;–V&#39;: [Errno 2] No such file or directory
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>python --version 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Python 3.8.10
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="pep-python-enhancement-proposals">
+<h2>PEP-Python Enhancement Proposals<a class="headerlink" href="#pep-python-enhancement-proposals" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://www.python.org/dev/peps/">https://www.python.org/dev/peps/</a></p>
+<ul class="simple">
+<li><p>PEP 405: 虚拟环境 <a class="reference external" href="https://www.python.org/dev/peps/pep-0405/">https://www.python.org/dev/peps/pep-0405/</a></p></li>
+<li><p>PEP 498: 格式化字符串字面值 (Formatted string literals) <a class="reference external" href="https://www.python.org/dev/peps/pep-0498/">https://www.python.org/dev/peps/pep-0498/</a></p></li>
+<li><p>PEP 526: Syntax for variable annotations <a class="reference external" href="https://www.python.org/dev/peps/pep-0526/">https://www.python.org/dev/peps/pep-0526/</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># PEP 526: Syntax for variable annotations</span>
+<span class="n">primes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">captain</span><span class="p">:</span> <span class="nb">str</span>  <span class="c1"># Note: no initial value!</span>
+<span class="k">class</span> <span class="nc">Starship</span><span class="p">:</span>
+    <span class="n">stats</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_677</span><span class="o">/</span><span class="mf">2261811807.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># PEP 526: Syntax for variable annotations</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">primes</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">captain</span><span class="p">:</span> <span class="nb">str</span>  <span class="c1"># Note: no initial value!</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="k">class</span> <span class="nc">Starship</span><span class="p">:</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">stats</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+
+<span class="ne">NameError</span>: name &#39;List&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>##PIP
+pip是一個以Python電腦程式語言寫成的軟件包管理系統，他可以安裝和管理軟件包，另外不少的軟件包也可以在「Python軟件包索引」（英語：Python Package Index，PyPI）中找到。 許多Python的發行版中已經預裝了pip。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip install --upgrade pip
+<span class="o">!</span>pip install tf_slim
+<span class="o">!</span>pip install lvis
+<span class="o">!</span>pip install tensorflow-addons
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="k">bash</span>
+pip install --upgrade pip
+pip install tf_slim
+pip install lvis
+pip install tensorflow-addons
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="anaconda">
+<h2>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h2>
+<p>Anaconda是一個免費開源的Python和R語言的發行版本，用於計算科學，Anaconda致力於簡化軟體套件管理系統和部署。Anaconda的包使用軟體套件管理系統Conda進行管理。
+<a class="reference external" href="https://www.anaconda.com/">https://www.anaconda.com/</a></p>
+<p><img alt="image" src="https://www.anaconda.com/imager/assetsdo/Products/8031/open-source-logos2x_680db6b6f11f9cc710dd7defae241cd3.png" /></p>
+</div>
+<div class="section" id="jupyter-notebook">
+<h2>Jupyter notebook<a class="headerlink" href="#jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<p><img alt="image" src="https://jupyter.org/assets/main-logo.svg" /></p>
+<p>Jupyter是一個非營利組織，旨在「為數十種程式語言的互動式計算開發開源軟體，開放標準和服務」。Jupyter支援幾十種語言的執行環境。</p>
+<p>Jupyter Project的名稱是對Jupyter支援的三種核心程式語言的引用，這三種語言是Julia、Python和R，也是對伽利略記錄發現木星的衛星的筆記本的致敬。Jupyter專案開發並支援互動式計算產品Jupyter Notebook、JupyterHub和JupyterLab，這是Jupyter Notebook的下一代版本。</p>
+</div>
+<div class="section" id="colab">
+<h2>Colab<a class="headerlink" href="#colab" title="Permalink to this headline">¶</a></h2>
+<p>Google Colab是一個基於Jupyter Notebook 的免費CPU虛擬機，透過瀏覽器即可編寫程式</p>
+<p><a class="reference external" href="https://colab.research.google.com/">https://colab.research.google.com/</a></p>
+</div>
+<div class="section" id="python-idle-integrated-development-and-learning-environment">
+<h2>Python IDLE — (Integrated Development and Learning Environment)<a class="headerlink" href="#python-idle-integrated-development-and-learning-environment" title="Permalink to this headline">¶</a></h2>
+<p>IDLE是Python的集成開發環境，與該語言的默認實現捆綁在一起。它與許多Linux發行版一起打包為Python打包的可選部分。它完全用Python和Tkinter GUI工具箱編寫。IDLE旨在成為一個簡單的IDE，適合初學者，尤其是在教育環境中。為此，它是跨平台的，並且避免了功能混亂。</p>
+<p><img alt="image" src="https://i1.wp.com/www.bhutanpythoncoders.com/wp-content/uploads/2020/08/interactive-shell.jpg?resize=443%2C431&amp;ssl=1" /></p>
+</div>
+<div class="section" id="spyder-ide">
+<h2>Spyder IDE<a class="headerlink" href="#spyder-ide" title="Permalink to this headline">¶</a></h2>
+<p>Spyder是一個使用Python語言的開放原始碼跨平台科學運算整合開發環境。Spyder整合了NumPy，SciPy，Matplotlib與IPython，以及其他開源軟體。
+<img alt="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTbO8HsMM0lfDM89pul-mq1y7XxjIUfJsEX06k8Zuc96cipRHs4-_u7bIGpIk3DHgCB_k&amp;usqp=CAU" /></p>
+</div>
+<div class="section" id="pycharm-the-python-ide-for-professional-developers">
+<h2>PyCharm-The Python IDE for Professional Developers<a class="headerlink" href="#pycharm-the-python-ide-for-professional-developers" title="Permalink to this headline">¶</a></h2>
+<p>PyCharm是一個用於電腦編程的整合式開發環境，主要用於Python語言開發，由捷克公司JetBrains開發，提供代碼分析、圖形化除錯器，整合測試器、整合版本控制系統，並支援使用Django進行網頁開發。 PyCharm是一個跨平台開發環境，擁有Microsoft Windows、macOS和Linux版本。
+<a class="reference external" href="https://www.jetbrains.com/pycharm/">https://www.jetbrains.com/pycharm/</a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="AUP110_A3_ProgrammingTerms.html" title="previous page">程式相關語彙 Programming vocabulary</a>
+    <a class='right-next' id="next-link" href="AUP110_A5_ProgrammingTerms.html" title="next page">程式相關語彙 Programming vocabulary</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Hsueh-Ting Chu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

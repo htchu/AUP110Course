@@ -1,0 +1,1908 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AU Fundamentals of Python Programming-110-M1題庫(32) &#8212; AUP110-Fundamentals of Programming</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="AU Fundamentals of Python Programming-110-考試重點提示" href="AUP110_M0_Hints.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">AUP110-Fundamentals of Programming</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A1_Syllabus.html">
+   基礎程式設計(一)-EE300044
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A2_KissipoLearning.html">
+   啟思博學習法(KissipoLearning)：簡簡單單學會寫程式
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A3_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A4_About_Python.html">
+   About_Python 關於Python程式設計
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A5_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W1_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Exercise.html">
+   計算score.txt分數在0-40, 41-59, 60-80, 80-100的人數
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Questions
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_M0_Hints.html">
+   AU Fundamentals of Python Programming-110-考試重點提示
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   AU Fundamentals of Python Programming-110-M1題庫(32)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/AUP110_M1_Problems.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAUP110_M1_Problems.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/AUP110_M1_Problems.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m1-problems-q01-q05">
+   M1 Problems:Q01-Q05
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q01">
+     M1-Q01 單位換算：英哩轉公里
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q02">
+     M1-Q02 攝氏轉華氏溫度
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q03">
+     M1-Q03 合、差及乘積
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q04">
+     M1-Q04 總分及平均成績
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q05">
+     M1-Q05 單位換算：身高及體重
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m1-problems-q06-q10">
+   M1 Problems:Q06-Q10
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q06">
+     M1-Q06 字串切割
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q07">
+     M1-Q07 全部變小寫
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q08">
+     M1-Q08 單位換算：公升轉加侖
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q09">
+     M1-Q09 單位換算：稱斤論兩
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q10">
+     M1-Q10 字串字元置換
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m1-problems-q11-q15">
+   M1 Problems:Q11-Q15
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q11">
+     M1-Q11 數字加密
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q12">
+     M1-Q12 計算總和、乘積、差、商和餘數
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q13-ascii">
+     M1-Q13 取得字元ASCII碼
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q14-unicode">
+     M1-Q14 取得中文字元萬國碼(Unicode)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q15-16-unicode">
+     M1-Q15 取得16進制萬國碼(Unicode)對應中文字
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m1-problems-q16-q20">
+   M1 Problems:Q16-Q20
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q16">
+     M1-Q16 圓柱體積計算
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q17">
+     M1-Q17 成績換算
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q18">
+     M1-Q18 區間公式
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q19">
+     M1-Q19 標準體重計算
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q20">
+     M1-Q20 找零錢問題
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m1-problems-q21-q25">
+   M1 Problems:Q21-Q25
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q21">
+     M1-Q21 判斷座標是否在圓形的範圍內
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q22">
+     M1-Q22 停車費計算
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q23">
+     M1-Q23 季節判定
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q24">
+     M1- Q24 星座查詢
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q25">
+     M1-Q25 平年閏年判斷
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m1-problems-q26-q30">
+   M1 Problems:Q26-Q30
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q26">
+     M1-Q26 計算電費
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q27">
+     M1-Q27 判斷大小寫或其他字元
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q28">
+     M1-Q28 大小寫轉換
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q29">
+     M1-Q29 奇偶數
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q30">
+     M1-Q30 三角形判定
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#m1-problems-q31-q32">
+   M1 Problems:Q31-Q32
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q31">
+     M1-Q31 三角形分類
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1-q32">
+     M1-Q32 數字價格轉文字價格
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="au-fundamentals-of-python-programming-110-m1-32">
+<h1>AU Fundamentals of Python Programming-110-M1題庫(32)<a class="headerlink" href="#au-fundamentals-of-python-programming-110-m1-32" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="m1-problems-q01-q05">
+<h2>M1 Problems:Q01-Q05<a class="headerlink" href="#m1-problems-q01-q05" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="m1-q01">
+<h3>M1-Q01 單位換算：英哩轉公里<a class="headerlink" href="#m1-q01" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+試撰寫一程式，可由鍵盤輸入英哩(float)，程式的輸出為公里(float)，其轉換公式如下： 1 英哩 = 1.6 公里</p>
+<p>輸入說明：
+輸入欲轉換之英哩數(float)。</p>
+<p>輸出說明：
+輸出公里(float)，取到小數點以下第二位，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>90.8</p></td>
+<td class="text-align:left"><p>145.28⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>95.4</p></td>
+<td class="text-align:left"><p>152.64⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用float()函數將輸入的字串轉換成float變數</p>
+<p><strong>Process:</strong> 簡單的乘法計算</p>
+<p><strong>Output:</strong> 取到小數點以下第二位的格式是.2f</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q02">
+<h3>M1-Q02 攝氏轉華氏溫度<a class="headerlink" href="#m1-q02" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2 秒)
+問題描述：
+讓使用者輸入一攝氏溫度，輸出相對應的華氏溫度。
+F=C×9/5+32</p>
+<p>輸入說明：
+輸入一攝氏溫度(float)。</p>
+<p>輸出說明：
+輸出相對應的華氏溫度(float)，計算到小數第2位四捨五入，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>30.8</p></td>
+<td class="text-align:left"><p>87.44⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>16.9</p></td>
+<td class="text-align:left"><p>62.42⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用float()函數將輸入的字串轉換成float變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算</p>
+<p><strong>Output:</strong> 取到小數點以下第二位的格式是.2f</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q03">
+<h3>M1-Q03 合、差及乘積<a class="headerlink" href="#m1-q03" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2 秒)
+問題描述：
+輸入兩個整數，計算其合、差及乘積。</p>
+<p>輸入說明：
+輸入兩個整數(int)。</p>
+<p>輸出說明：
+輸出兩個整數的合(int)、差(int)及乘積(int)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>8</p></td>
+<td class="text-align:left"><p>17</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>9</p></td>
+<td class="text-align:left"><p>-1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>72⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q04">
+<h3>M1-Q04 總分及平均成績<a class="headerlink" href="#m1-q04" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2 秒)
+問題描述：
+輸入國文、英文和數學成績，計算其總分數及平均成績。</p>
+<p>輸入說明：
+輸入國文(int)、英文(int)和數學(int)成績。</p>
+<p>輸出說明：
+輸出總分數及四捨五入後的平均成績(int)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>80</p></td>
+<td class="text-align:left"><p>210</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>70</p></td>
+<td class="text-align:left"><p>70⏎</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>60</p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加法和整數除法計算</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q05">
+<h3>M1-Q05 單位換算：身高及體重<a class="headerlink" href="#m1-q05" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2 秒)</p>
+<p>問題描述：
+寫一程式，讓使用者輸入身高(cm)及體重(kg)，作單位換算輸出身高(英吋)及體重(磅)。(1 磅=0.454 公斤，1 吋=2.54 公分)</p>
+<p>輸入說明：
+分別輸入身高(cm)(int)及體重(kg)(int)。</p>
+<p>輸出說明：
+作單位換算輸出身高(英吋)(float)及體重(磅)(float)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>180   85</p></td>
+<td class="text-align:left"><p>70.86614173228347</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>187.22466960352423⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用split()函數將輸入的字串切成二個變數 paras[0], paras[1]</p>
+<p><strong>Process:</strong> 簡單的除法計算</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-problems-q06-q10">
+<h2>M1 Problems:Q06-Q10<a class="headerlink" href="#m1-problems-q06-q10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="m1-q06">
+<h3>M1-Q06 字串切割<a class="headerlink" href="#m1-q06" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2 秒)
+問題描述：
+寫一個程式讓使用者輸入一段文字及一個切割用符號，程式會依指定的符號切割成數字子字串。</p>
+<p>輸入說明：
+分別輸入文字串(String)及切割符號(char)。</p>
+<p>輸出說明：
+透過切割符號切割後每一個字串一列顯示，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>asia,japan,taiwan,taipei   ,</p></td>
+<td class="text-align:left"><p>asia</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>japan</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>taiwan</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>taipei⏎</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>Jack#David&amp;John#Kevin   #</p></td>
+<td class="text-align:left"><p>Jack</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>David</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>John</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>Kevin⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用split()函數將輸入的字串切成二個變數 ss, sy，再用split()函數將ss字串切割成一個list</p>
+<p><strong>Process:</strong> 對list的元素進行簡單的for迴圈</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q07">
+<h3>M1-Q07 全部變小寫<a class="headerlink" href="#m1-q07" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+寫一個程式讓使用者輸入一段文字(String)，程式會把文字串所有的字母不管大小寫全部變成小寫字母顯示(String)。</p>
+<p>輸入說明：
+分別輸入文字串(String)。</p>
+<p>輸出說明：
+字串裡的每一個字母都變成小寫後顯示(String)，最後必須有換行字元。</p>
+<p>範例：
+Sample Input:	Sample Output:
+Taiwan and U.S.A.	taiwan and u.s.a.⏎
+Python is a good Programming Language.	python is a good programming language.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>Taiwan and U.S.A.</p></td>
+<td class="text-align:left"><p>taiwan and u.s.a.⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>Python is a good Programming Language.</p></td>
+<td class="text-align:left"><p>python is a good programming language.⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong>  輸入一個字串</p>
+<p><strong>Process:</strong> 使用lower()函數</p>
+<p><strong>Output:</strong> 輸出一個字串</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q08">
+<h3>M1-Q08 單位換算：公升轉加侖<a class="headerlink" href="#m1-q08" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+大明幫媽媽到油漆行買油漆，結果店員問他要幾「美加侖」的，大明不知道該怎麼回答，心裡想媽媽只有說大約要2公升的漆。請寫一程式可以將公升換算成美加侖。 依度量衡標準 1公升 = 0.26418 美加侖</p>
+<p>輸入說明：
+輸入欲轉換之公升數(float)。</p>
+<p>輸出說明：
+輸出加侖(float)，四捨五入取到小數點以下第一位，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>10</p></td>
+<td class="text-align:left"><p>2.6⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>18</p></td>
+<td class="text-align:left"><p>4.7⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用float()函數將輸入的字串轉換成float變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算</p>
+<p><strong>Output:</strong> 取到小數點以下第1位的格式是.1f</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q09">
+<h3>M1-Q09 單位換算：稱斤論兩<a class="headerlink" href="#m1-q09" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)
+問題描述：
+阿美回到鄉下的阿嬤家，阿嬤很高興要做好料給孫女吃，不過家裡沒有食材，阿嬤請阿美去巷子口的「完美生鮮超市」買1斤半豬絞肉回來。阿美到了生鮮超市，傻眼，都是標幾公克，哪有人在寫斤的啦。請寫一個程式可以計算公克換成台斤的轉換。依度量衡標準 600公克= 1 台斤</p>
+<p>輸入說明：
+輸入欲轉換之公克數(float)。</p>
+<p>輸出說明：
+輸出台斤(float)，取到小數點以下第一位，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>300</p></td>
+<td class="text-align:left"><p>0.5⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>650</p></td>
+<td class="text-align:left"><p>1.1⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用float()函數將輸入的字串轉換成float變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算</p>
+<p><strong>Output:</strong> 取到小數點以下第1位的格式是.1f</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q10">
+<h3>M1-Q10 字串字元置換<a class="headerlink" href="#m1-q10" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)
+問題描述：
+阿坤最討論長官老是要他改文件，因為阿坤的長官打字不太行，經常注音不選字所以錯別字特別多。請寫一個程式幫阿坤將字串中同樣的字以另外一個字替換掉。</p>
+<p>輸入說明：
+輸入一個字串(String)與 2 個字元(char)。</p>
+<p>輸出說明：
+輸出被替換後的字串(String)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>asia csie taiwan</p></td>
+<td class="text-align:left"><p>as1a cs1e ta1wan⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>i</p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>1</p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 輸入三個字串變數</p>
+<p><strong>Process:</strong> replace()函數</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-problems-q11-q15">
+<h2>M1 Problems:Q11-Q15<a class="headerlink" href="#m1-problems-q11-q15" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="m1-q11">
+<h3>M1-Q11 數字加密<a class="headerlink" href="#m1-q11" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+讀取一四位數，並且依下列方式進行加密</p>
+<ol>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   以該位數加7後，除以 10 取餘數取代該位數
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   將第一個位數的數字與第三個位數的數字對調
+</pre></div>
+</div>
+</li>
+<li><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>   將第二個位數的數字與第四個位數的數字對調
+</pre></div>
+</div>
+</li>
+</ol>
+<p>輸入說明：
+輸入一個四位數的字串(String)。</p>
+<p>輸出說明：
+輸出加密後的數字串(String)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>1234</p></td>
+<td class="text-align:left"><p>0189⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>4567</p></td>
+<td class="text-align:left"><p>3412⏎</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>7891</p></td>
+<td class="text-align:left"><p>6845⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 計算每一位的數字，再重新組成四位數</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q12">
+<h3>M1-Q12 計算總和、乘積、差、商和餘數<a class="headerlink" href="#m1-q12" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+撰寫一個程式，要求使用者輸入兩個數字，再從使用者取得這兩個數字，然後印出這兩個數字的總和、乘積、差、商、和餘數。</p>
+<p>輸入說明：
+依序輸入兩個整數(int)，整數範圍不超過 1000 。</p>
+<p>輸出說明：
+輸出總和(int)、乘積(int)、差(int)、商(int)和餘數(int)(注意格式)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>7</p></td>
+<td class="text-align:left"><p>7+3=10</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>3</p></td>
+<td class="text-align:left"><p>7*3=21</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>7-3=4</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>7/3=2…1⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q13-ascii">
+<h3>M1-Q13 取得字元ASCII碼<a class="headerlink" href="#m1-q13-ascii" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+請寫一個程式讓使用者輸入一個英文字母、標點符號或數字字符，程式回傳取得該字元的ASII值。</p>
+<p>輸入說明：
+輸入一個字元 ch (char)。</p>
+<p>輸出說明：
+輸出該字元對應的 ASCII 值 (int)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>a</p></td>
+<td class="text-align:left"><p>97⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>X</p></td>
+<td class="text-align:left"><p>88⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 輸入一個字串變數</p>
+<p><strong>Process:</strong> ord()函數</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q14-unicode">
+<h3>M1-Q14 取得中文字元萬國碼(Unicode)<a class="headerlink" href="#m1-q14-unicode" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+請寫一個程式讓使用者輸入一個中文字元，程式回傳取得該字元的萬國碼。</p>
+<p>輸入說明：
+輸入一個中文字元 ch (char)。</p>
+<p>輸出說明：
+輸出該字元對應的「萬國碼」(Unicode)值 (int)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>亞</p></td>
+<td class="text-align:left"><p>4e9e⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>資</p></td>
+<td class="text-align:left"><p>8cc7⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 輸入一個字串變數</p>
+<p><strong>Process:</strong> ord()函數</p>
+<p><strong>Output:</strong> 套用f-string, 輸出16進位數</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q15-16-unicode">
+<h3>M1-Q15 取得16進制萬國碼(Unicode)對應中文字<a class="headerlink" href="#m1-q15-16-unicode" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+請寫一個程式讓使用者輸入16進制萬國碼，程式回傳該萬國碼的中文字元。</p>
+<p>輸入說明：
+輸入一個16進制整數 (int)。</p>
+<p>輸出說明：
+輸出對應的「萬國碼」(Unicode)值的字元 (char)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>8cc7</p></td>
+<td class="text-align:left"><p>資⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>48e9</p></td>
+<td class="text-align:left"><p>䣩⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 輸入一個字串變數</p>
+<p><strong>Process:</strong> chr()函數，16進制參數</p>
+<p><strong>Output:</strong> math.pi</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-problems-q16-q20">
+<h2>M1 Problems:Q16-Q20<a class="headerlink" href="#m1-problems-q16-q20" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="m1-q16">
+<h3>M1-Q16 圓柱體積計算<a class="headerlink" href="#m1-q16" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+請寫一個程式讓使用者輸入圓的半徑(float)與高(float)，程式輸出該圓的體積 (float)。 <span class="math notranslate nohighlight">\(π×r^2×h\)</span></p>
+<p>輸入說明：
+輸入半徑(float)與高度 (float)。</p>
+<p>輸出說明：
+輸出該圓的體積(float)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>18.9  12</p></td>
+<td class="text-align:left"><p>13466.49974146572⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>3.2 12</p></td>
+<td class="text-align:left"><p>386.0389052731138⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用float()函數將輸入的字串轉換成float變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算和math.pi常數</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q17">
+<h3>M1-Q17 成績換算<a class="headerlink" href="#m1-q17" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+每學期期末是老師們的頭痛時刻，老師用心授課可是難免遇到同學習成效不佳情況，老師為了不想背著「大刀」名號在系上行走往往會使用調整分數招式。請寫一個程式讓使用者輸入成績 (int)，程式輸出開根號乘上10的新成績 (int)。</p>
+<p>輸入說明：
+輸入成績 (int)。</p>
+<p>輸出說明：
+輸出新成績(int)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>36</p></td>
+<td class="text-align:left"><p>60⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>49</p></td>
+<td class="text-align:left"><p>70⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算和</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q18">
+<h3>M1-Q18 區間公式<a class="headerlink" href="#m1-q18" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)
+問題描述：
+讓使用者輸入 x，並計算 y 值輸出，其公式如下：</p>
+<p><span class="math notranslate nohighlight">\(y=3×x^2 \)</span>若  x &lt;  -1</p>
+<p><span class="math notranslate nohighlight">\(y=x^3+3×x-3 \)</span> 若    -1 ≤ x ≤ 1</p>
+<p><span class="math notranslate nohighlight">\(y=2×x +3\)</span> 若  x &gt;  1</p>
+<p>輸入說明：
+輸入一個整數 x (int)。</p>
+<p>輸出說明：
+依照公式輸出 y 值，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>-5</p></td>
+<td class="text-align:left"><p>75⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算和</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q19">
+<h3>M1-Q19 標準體重計算<a class="headerlink" href="#m1-q19" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+已知男生標準體重＝(身高－80 )×0.7；女生標準體重＝(身高－70) × 0.6；試寫一個程式可以計算男生女生的標準體重</p>
+<p>輸入說明：
+輸入兩個數值，依序代表為身高(int)及性別(int)（1代表男性；2代表女性）。</p>
+<p>輸出說明：
+輸出標準體重，浮點數(float)取至第一位，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>172  1</p></td>
+<td class="text-align:left"><p>64.4⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>165  2</p></td>
+<td class="text-align:left"><p>57.0⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算和</p>
+<p><strong>Output:</strong> 套用f-string,取到小數點以下第1位的格式是.1f</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q20">
+<h3>M1-Q20 找零錢問題<a class="headerlink" href="#m1-q20" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+假設銅板有1元、5元、50元共三種，媽媽請小明去菜市場買水果，給了小明 n 元，且媽媽交待，要老闆找小明的零錢的數目要最少，而小明到了水果攤買了 a_1顆蘋果，a_2顆柳丁，及 a_3 顆桃子，1顆蘋果15元，1顆柳丁20元，1顆桃子30元，請問老問需找多少個1元、5元、50元，其銅板數目最少。</p>
+<p>輸入說明：
+先輸入媽媽給小明多少錢 n，接著輸入 <span class="math notranslate nohighlight">\(a_1, a_2, a_3\)</span>， 在此 <span class="math notranslate nohighlight">\(n, a_1, a_2, a_3\)</span> 為整數 (int)，且 <span class="math notranslate nohighlight">\(a_1×15+a_2×20+a_3×30\)</span> 小於或等於 n 。</p>
+<p>輸出說明：
+列出共找小明多少個 1元，5元 及 50元，若帶的錢不夠買水果，則顯示”0”，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>500  1  2  3</p></td>
+<td class="text-align:left"><p>0</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>1</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>7⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用split()切開輸入字串，再用 int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算和</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-problems-q21-q25">
+<h2>M1 Problems:Q21-Q25<a class="headerlink" href="#m1-problems-q21-q25" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="m1-q21">
+<h3>M1-Q21 判斷座標是否在圓形的範圍內<a class="headerlink" href="#m1-q21" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+一圓形直徑為200，且中心座標為(0,0)。請寫一支程式可以輸入點的座標，並判斷該點是否在圓形的範圍內。如果點的位置剛好在邊界的話也算是在圓形範圍內(例：x = 100， y = 0)</p>
+<p>輸入說明：
+輸入一整數座標，依序分 x (int)與 y (int)。</p>
+<p>輸出說明：
+輸出此座標位置在圓內(inside)或圓外(outside)訊息，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>50  50</p></td>
+<td class="text-align:left"><p>inside⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>50  200</p></td>
+<td class="text-align:left"><p>outside⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算和</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q22">
+<h3>M1-Q22 停車費計算<a class="headerlink" href="#m1-q22" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+假設某個停車場的費率是停車2小時以內，每半小時30元，超過2小時，但未滿4小時的部份，每半小時40元，超過4小時以上的部份，每半小時60元，未滿半小時部分不計費。如果您從早10點23分停到午3點20分，請撰寫程式計算共需繳交的停車費。</p>
+<p>輸入說明：
+輸入兩組時間時(int)與分(int)，分別為開始與離開時間，24小時制。</p>
+<p>輸出說明：
+輸出停車費(int)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>10  23</p></td>
+<td class="text-align:left"><p>340⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>15  20</p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>11  11</p></td>
+<td class="text-align:left"><p>880⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>20  30</p></td>
+<td class="text-align:left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 簡單的加減乘除法計算和</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q23">
+<h3>M1-Q23 季節判定<a class="headerlink" href="#m1-q23" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+試撰寫一程式，可輸入月份，然後判斷其所屬的季節 3 ~ 5 月為春季，6 ~ 8 月為夏季， 9 ~ 11 月為秋季， 12 ~ 2 月為冬季。</p>
+<p>輸入說明：
+輸入月份(int)。</p>
+<p>輸出說明：
+輸出該月份的季節(String)，  3 ~ 5 月為春季(Spring)， 6 ~ 8 月為夏季(Summer)， 9 ~ 11 月為秋季(Autumn)，12 ~ 2 月為冬季(Winter)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>3</p></td>
+<td class="text-align:left"><p>Spring⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>10</p></td>
+<td class="text-align:left"><p>Autumn⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> if判斷式( a&lt; var &lt;b)</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q24">
+<h3>M1- Q24 星座查詢<a class="headerlink" href="#m1-q24" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)
+問題描述：
+請設計程式，根據輸入之及日期，輸出對應之星座。</p>
+<ul class="simple">
+<li><p>1997年 1月 21日 ~ 1997年 2月 18日 水瓶 (Aquarius)</p></li>
+<li><p>1997年 2月 19日 ~ 1997年 3月 20日 雙魚 (Pisces)</p></li>
+<li><p>1997年 3月 21日 ~ 1997年 4月 20日 牡羊 (Aries)</p></li>
+<li><p>1997年 4月 21日 ~ 1997年 5月 21日 金牛 (Taurus)</p></li>
+<li><p>1997年 5月 22日 ~ 1997年 6月 21日 雙子 (Gemini)</p></li>
+<li><p>1997年 6月 22日 ~ 1997年 7月 22日 巨蟹 (Cancer)</p></li>
+<li><p>1997年 7月 23日 ~ 1997年 8月 23日 獅子 (Leo)</p></li>
+<li><p>1997年 8月 24日 ~ 1997年 9月 23日 處女 (Virgo)</p></li>
+<li><p>1997年 9月 24日 ~ 1997年 10月 23日 天秤 (Libra)</p></li>
+<li><p>1997年10月 24日 ~ 1997年 11月 22日 天蠍 (Scorpio)</p></li>
+<li><p>1997年11月 23日 ~ 1997年 12月 21日 射手 (Sagittarius)</p></li>
+<li><p>1997年12月 22日 ~ 1998年 1月 20日 摩羯 (Capricorn)</p></li>
+</ul>
+<p>輸入說明：
+請輸入月(int)及日期(int)。</p>
+<p>輸出說明：
+依照星座標準，將及日期轉成星座(String)輸出，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>8  20</p></td>
+<td class="text-align:left"><p>Leo⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>4  15</p></td>
+<td class="text-align:left"><p>Aries⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 先判斷月份，再看是前一半還是後一半</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q25">
+<h3>M1-Q25 平年閏年判斷<a class="headerlink" href="#m1-q25" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+試撰寫一個程式，可由鍵盤讀入一個4 位數的整數代表西洋年，然後這個年份是否為閏年每四年一閏，每百年不閏，每四百年一閏，例如西元1900 雖為4 的倍數，但可被100 整除，所以不是閏年，同理，2000 是閏年，因可被400 整數，而2004 當然也是閏，因可以被4 整除</p>
+<p>輸入說明：
+輸入西元年份(int)。</p>
+<p>輸出說明：
+輸出閏年(Leap Year)或是平年(Common Year)(String)，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>2000</p></td>
+<td class="text-align:left"><p>Leap Year⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>2003</p></td>
+<td class="text-align:left"><p>Common Year⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 判斷條件</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-problems-q26-q30">
+<h2>M1 Problems:Q26-Q30<a class="headerlink" href="#m1-problems-q26-q30" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="m1-q26">
+<h3>M1-Q26 計算電費<a class="headerlink" href="#m1-q26" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+輸入所使用的度數，換算夏月及非夏月之電費金額</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>每度(元):</p></th>
+<th class="text-align:left head"><p>夏月:</p></th>
+<th class="text-align:left head"><p>非夏月:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>120 度以下部分</p></td>
+<td class="text-align:left"><p>2.10</p></td>
+<td class="text-align:left"><p>2.10</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>121-330 度部分</p></td>
+<td class="text-align:left"><p>3.02</p></td>
+<td class="text-align:left"><p>2.68</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>331-500 度部分</p></td>
+<td class="text-align:left"><p>4.39</p></td>
+<td class="text-align:left"><p>3.61</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>501-700 度部分</p></td>
+<td class="text-align:left"><p>4.97</p></td>
+<td class="text-align:left"><p>4.01</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>701 度以上部分</p></td>
+<td class="text-align:left"><p>5.63</p></td>
+<td class="text-align:left"><p>4.50</p></td>
+</tr>
+</tbody>
+</table>
+<p>輸入說明：
+使用的電力度數(int)。</p>
+<p>輸出說明：
+夏月與非夏月的金額(float)，請輸出至小數點後兩位，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>525</p></td>
+<td class="text-align:left"><p>1756.75</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p></p></td>
+<td class="text-align:left"><p>1528.75⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 判斷條件</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q27">
+<h3>M1-Q27 判斷大小寫或其他字元<a class="headerlink" href="#m1-q27" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+輸入一個字元，判斷是大寫或小寫或是其他字元。</p>
+<p>輸入說明：
+輸入一個字元 (char)。</p>
+<p>輸出說明：
+輸出判斷結果(大寫：uppercase、小寫：lowercase、特殊字元：special character)，最後必須有換行字元。</p>
+<p>範例：
+Sample Input:	Sample Output:
+A	uppercase⏎
+a	lowercase⏎</p>
+<ul class="simple">
+<li><p>special character⏎</p></li>
+</ul>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>A</p></td>
+<td class="text-align:left"><p>uppercase⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>a</p></td>
+<td class="text-align:left"><p>lowercase⏎</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>*</p></td>
+<td class="text-align:left"><p>special character⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> input()輸入一個字串</p>
+<p><strong>Process:</strong> str.isupper(), str.islower()</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q28">
+<h3>M1-Q28 大小寫轉換<a class="headerlink" href="#m1-q28" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+輸入一個字元，轉換其大小寫輸出 (大寫 -&gt;小寫，小寫-&gt;大寫)。</p>
+<p>輸入說明：
+輸入一個字元 (char)。</p>
+<p>輸出說明：
+將輸入轉換其大小寫輸出，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>A</p></td>
+<td class="text-align:left"><p>a⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>a</p></td>
+<td class="text-align:left"><p>A⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> input()輸入一個字串</p>
+<p><strong>Process:</strong> str.upper(), str.lower()</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q29">
+<h3>M1-Q29 奇偶數<a class="headerlink" href="#m1-q29" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+輸入一正整數，判斷其奇偶數。</p>
+<p>輸入說明：
+輸入一正整數 (int)。</p>
+<p>輸出說明：
+判斷其奇偶數，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>40</p></td>
+<td class="text-align:left"><p>Even⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>39</p></td>
+<td class="text-align:left"><p>Odd⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 判斷條件</p>
+<p><strong>Output:</strong> print()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q30">
+<h3>M1-Q30 三角形判定<a class="headerlink" href="#m1-q30" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+讓使用者輸入三角形的三邊長a, b, c (且 a ≤ b ≤ c ) ，判斷並輸出 a, b, c 是否為合法三邊長。</p>
+<p>輸入說明：
+輸入三角形的三邊長 a, b, c (且a ≤ b ≤ c )。</p>
+<p>輸出說明：
+輸出是否為合法三邊長，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>7 9 8</p></td>
+<td class="text-align:left"><p>False⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>4 1 2</p></td>
+<td class="text-align:left"><p>False⏎</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>3 4 5</p></td>
+<td class="text-align:left"><p>True⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>1 2 3</p></td>
+<td class="text-align:left"><p>False⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用split()切開輸入字串，再用 int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 將條件表示成if-condition</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-problems-q31-q32">
+<h2>M1 Problems:Q31-Q32<a class="headerlink" href="#m1-problems-q31-q32" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="m1-q31">
+<h3>M1-Q31 三角形分類<a class="headerlink" href="#m1-q31" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+讓使用者輸入一合法三角形的三邊長a, b, c (且 <span class="math notranslate nohighlight">\(a ≤ b ≤ c\)</span> ) ， 判斷並輸出該三角形為「Right triangle(直角三角形)」，「Obtuse triangle(鈍角三角形)」，或「Acute triangle(銳角三角形)」。</p>
+<p>判斷方法:</p>
+<p>假設三角形的三個邊長分別是 a, b, c，其中 c  為最長的邊長計算一下</p>
+<p>如果
+<span class="math notranslate nohighlight">\(a^2+b^2&lt;c^2\)</span>
+則為鈍角三角形鈍角位於 c 所對應的角。</p>
+<p>如果 <span class="math notranslate nohighlight">\(a^2+b^2=c^2\)</span>
+則為直角三角形直角位於c所對應的角。</p>
+<p>如果 <span class="math notranslate nohighlight">\(a^2+b^2&gt;c^2\)</span>
+則為銳角三角形 a, b, c 三邊所對應的角均為銳角</p>
+<p>輸入說明：
+輸入一合法三角形的三邊長 a (int), b (int), c(int)  (且 <span class="math notranslate nohighlight">\(a ≤ b ≤ c\)</span> )。</p>
+<p>輸出說明：
+判斷並輸出該三角形為「Right triangle(直角三角形)」，「Obtuse triangle(鈍角三角形)」，或「Acute triangle(銳角三角形)」，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>3 4 5</p></td>
+<td class="text-align:left"><p>Right triangle⏎</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>2 3 4</p></td>
+<td class="text-align:left"><p>Obtuse triangle⏎</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>4 5 6</p></td>
+<td class="text-align:left"><p>Acute triangle⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 使用split()切開輸入字串，再用 int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 將條件表示成if-condition</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="m1-q32">
+<h3>M1-Q32 數字價格轉文字價格<a class="headerlink" href="#m1-q32" title="Permalink to this headline">¶</a></h3>
+<p>(時間限制：2秒)</p>
+<p>問題描述：
+輸入一 1~1000 的價格，並根據此價格在螢幕上印出「? thousand ? hundred? ten? dollar」字樣。</p>
+<p>輸入說明：
+輸入一 1~1000 的價格 (int)。</p>
+<p>輸出說明：
+輸出價格在螢幕上印出「? thousand ? hundred? ten? dollar」字樣，最後必須有換行字元。</p>
+<p>範例：</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Sample Input:</p></th>
+<th class="text-align:left head"><p>Sample Output:</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>173</p></td>
+<td class="text-align:left"><p>0 thousand 1 hundred 7 ten 3 dollar⏎</p></td>
+</tr>
+</tbody>
+</table>
+<p><font size="10">ℋ</font>int(祕技):</p>
+<p><strong>Input:</strong> 用 int()函數將輸入的字串轉換成整數變數</p>
+<p><strong>Process:</strong> 計算每一位數字</p>
+<p><strong>Output:</strong> 套用f-string</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#程式由此開始寫</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="AUP110_M0_Hints.html" title="previous page">AU Fundamentals of Python Programming-110-考試重點提示</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Hsueh-Ting Chu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

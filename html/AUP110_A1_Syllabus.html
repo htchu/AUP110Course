@@ -1,0 +1,919 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基礎程式設計(一)-EE300044 &#8212; AUP110-Fundamentals of Programming</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="啟思博學習法(KissipoLearning)：簡簡單單學會寫程式" href="AUP110_A2_KissipoLearning.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">AUP110-Fundamentals of Programming</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   基礎程式設計(一)-EE300044
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A2_KissipoLearning.html">
+   啟思博學習法(KissipoLearning)：簡簡單單學會寫程式
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A3_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A4_About_Python.html">
+   About_Python 關於Python程式設計
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A5_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W1_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Exercise.html">
+   計算score.txt分數在0-40, 41-59, 60-80, 80-100的人數
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Questions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_M0_Hints.html">
+   AU Fundamentals of Python Programming-110-考試重點提示
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_M1_Problems.html">
+   AU Fundamentals of Python Programming-110-M1題庫(32)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/AUP110_A1_Syllabus.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAUP110_A1_Syllabus.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/AUP110_A1_Syllabus.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   基礎程式設計(一)-EE300044
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ipo-model">
+     第1週(9/13)-程式語言和IPO-model
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w1-essential">
+       W1 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w1-advanced">
+       W1 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     第2週(9/20) 彈性放假
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#python">
+     第3週(9/27)-Python的變數和運算
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w3-essential">
+       W3 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w3-advanced">
+       W3 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     第4週(10/4)-Python簡單流程控制
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w4-essential">
+       W4 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w4-advanced">
+       W4 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     第5週(10/11) 彈性放假
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#condition-container">
+     第6週(10/18)-條件式(condition)和資料容器（Container）
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w6-essential">
+       W6 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w6-advanced">
+       W6 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     第7週(10/25)-常用內建函數以及字串的使用
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w7-essential">
+       W7 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w7-advanced">
+       W7 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m1test">
+     第8週(11/1)-M1Test模組一測驗
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ee300045">
+   基礎程式設計(二)-EE300045
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#i-o">
+     第9週(11/8)-檔案處理(1):I/O函數
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w9-essential">
+       W9 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w9-advanced">
+       W9 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#json">
+     第10週(11/15)-檔案處理(2):json 結構化
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w10-essential">
+       W10 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w10-advanced">
+       W10 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exception">
+     第11週(11/22)-例外處理 (Exception)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w11-essential">
+       W11 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w11-advanced">
+       W11 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#generator">
+     第12週(11/29)-生成器(Generator)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w12-essential">
+       W12 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w12-advanced">
+       W12 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m2test">
+     第13週(12/6)-M2Test模組二測驗
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ee300046">
+   基礎程式設計(三)-EE300046
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     第14週(12/13)-函數(1)定義、呼叫和傳回值
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w14-essential">
+       W14 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w14-advanced">
+       W14 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     第15週(12/20)-函數(2):遞迴函數,預設參數, 多重傳回值
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w15-essential">
+       W15 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w15-advanced">
+       W15 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#class">
+     第16週(12/27)-類別(Class)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w16-essential">
+       W16 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w16-advanced">
+       W16 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#module">
+     第17週(1/3)-模組(Module)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w17-essential">
+       W17 Essential-基本的
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#w17-advanced">
+       W17 Advanced-進階的
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#m3test">
+     第18週(1/10)-M3Test模組三測驗
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p>#學習目標：用Python程式語言實現從輸入到輸出的演算法</p>
+<ol class="simple">
+<li><p>了解Python程式碼的組成</p></li>
+<li><p>會使用各種資料類型來承接輸入資料</p></li>
+<li><p>運用各種運算子組合成表示式，以進行計算</p></li>
+<li><p>控制帶有決策與迴圈的流程</p></li>
+<li><p>輸出運算結果的正確格式</p></li>
+</ol>
+<p>2021/09/12</p>
+<div class="section" id="ee300044">
+<h1>基礎程式設計(一)-EE300044<a class="headerlink" href="#ee300044" title="Permalink to this headline">¶</a></h1>
+<p>Fundamental Computer Programming(1)</p>
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/heds-part-one-1598021773.png" alt="drawing" height="100"/><div class="section" id="ipo-model">
+<h2>第1週(9/13)-程式語言和IPO-model<a class="headerlink" href="#ipo-model" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w1-essential">
+<h3>W1 Essential-基本的<a class="headerlink" href="#w1-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>啟思博的概念(Kissipo Learning)</p></li>
+<li><p>KISS Principle: Colab + Github的使用</p></li>
+<li><p>IPO model: input–process–output (輸入-處理-輸出) input()和print()</p></li>
+<li><p>Anaconda 和Jupyter notebook</p></li>
+<li><p>Hello World程式</p></li>
+</ul>
+</div>
+<div class="section" id="w1-advanced">
+<h3>W1 Advanced-進階的<a class="headerlink" href="#w1-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>關於Python 程式語言</p></li>
+<li><p>不同Python編輯器的介紹:IDLE, Spyder, Visual Studio Code, PyCharm</p></li>
+<li><p>Python程式的執行 (Run)</p></li>
+<li><p>Python程式的偵錯 (Debug)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>第2週(9/20) 彈性放假<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>![](data:image/png;base64,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)</p>
+</div>
+<div class="section" id="python">
+<h2>第3週(9/27)-Python的變數和運算<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w3-essential">
+<h3>W3 Essential-基本的<a class="headerlink" href="#w3-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: input()函數的使用和參數(prompt), 變數和資料型別(int, str), type()</p></li>
+<li><p>Process: 指定敘述(assignment),表示式(expressions ), 算術運算子和運算優先順序, 標準庫math的應用</p></li>
+<li><p>Output: print()函數的使用和參數(sep, end),Escape Sequence (逸出序列)</p></li>
+</ul>
+</div>
+<div class="section" id="w3-advanced">
+<h3>W3 Advanced-進階的<a class="headerlink" href="#w3-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>多行的字串</p></li>
+<li><p>程式註解</p></li>
+<li><p>MarkDown語法</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>第4週(10/4)-Python簡單流程控制<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w4-essential">
+<h3>W4 Essential-基本的<a class="headerlink" href="#w4-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: 序列(List), 字串切割(str.split()), len()函數,</p></li>
+<li><p>Process: for-loop, 多重指定敘述(multiple assignment), 型別轉換函數(int(), str(), float()),索引(Indexing)和切片(Slicing)</p></li>
+<li><p>Output: f-格式化字串, print()的格式化輸出</p></li>
+</ul>
+</div>
+<div class="section" id="w4-advanced">
+<h3>W4 Advanced-進階的<a class="headerlink" href="#w4-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>舊式字串格式化 (1) 百分比符號字串格式化(% string formatting) (2) str.format() 函數</p></li>
+<li><p>序列(List)的初始化和插入append()函數</p></li>
+</ul>
+<p><a class="reference external" href="https://realpython.com/lessons/old-school-string-formatting-python/">https://realpython.com/lessons/old-school-string-formatting-python/</a></p>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>第5週(10/11) 彈性放假<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>![](data:image/png;base64,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)</p>
+</div>
+<div class="section" id="condition-container">
+<h2>第6週(10/18)-條件式(condition)和資料容器（Container）<a class="headerlink" href="#condition-container" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w6-essential">
+<h3>W6 Essential-基本的<a class="headerlink" href="#w6-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: map()函數的使用</p></li>
+<li><p>Process: if條件式, 比較運算子, 布林值和布林邏輯, while迴圈</p></li>
+<li><p>Output: 字串的format(), zfill(), center(), rjust()和ljust() 函數</p></li>
+</ul>
+</div>
+<div class="section" id="w6-advanced">
+<h3>W6 Advanced-進階的<a class="headerlink" href="#w6-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>List, Tuple, Dict, Set資料容器（Container）</p></li>
+<li><p>內建函式—max()、min()、sum()</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>第7週(10/25)-常用內建函數以及字串的使用<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w7-essential">
+<h3>W7 Essential-基本的<a class="headerlink" href="#w7-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: input的複習</p></li>
+<li><p>Process: 字串函數, ascii函數, unicode函數，字串的索引(Indexing)和切片(Slicing)</p></li>
+<li><p>Output: Output的複習</p></li>
+</ul>
+</div>
+<div class="section" id="w7-advanced">
+<h3>W7 Advanced-進階的<a class="headerlink" href="#w7-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>內建函數:pow()、divmod()、round()</p></li>
+<li><p>內建函數:repr()和eval()</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="m1test">
+<h2>第8週(11/1)-M1Test模組一測驗<a class="headerlink" href="#m1test" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://assets.website-files.com/5e875053aa63f43b4cb8c9d2/5e9306d896104684f079b7c6_training.png" /></p>
+</div>
+</div>
+<div class="section" id="ee300045">
+<h1>基礎程式設計(二)-EE300045<a class="headerlink" href="#ee300045" title="Permalink to this headline">¶</a></h1>
+<p>Fundamental Computer Programming(2)</p>
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/heds-part-two-1598021823.png" alt="drawing" height="100"/>
+<div class="section" id="i-o">
+<h2>第9週(11/8)-檔案處理(1):I/O函數<a class="headerlink" href="#i-o" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w9-essential">
+<h3>W9 Essential-基本的<a class="headerlink" href="#w9-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: I/O函數(open() and read()), with/as的使用</p></li>
+<li><p>Process: 資料排序, sorted()函數, max()/min()函數</p></li>
+<li><p>Output: I/O函數(open() and write())</p></li>
+</ul>
+</div>
+<div class="section" id="w9-advanced">
+<h3>W9 Advanced-進階的<a class="headerlink" href="#w9-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>os, glob, pathlib模組-Python Standard Library</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="json">
+<h2>第10週(11/15)-檔案處理(2):json 結構化<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w10-essential">
+<h3>W10 Essential-基本的<a class="headerlink" href="#w10-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: 讀入 json 結構化資料</p></li>
+<li><p>Process: for-loop/while-loop, range()函數, enumerate()函數</p></li>
+<li><p>Output:  使用 json 儲存結構化資料</p></li>
+</ul>
+</div>
+<div class="section" id="w10-advanced">
+<h3>W10 Advanced-進階的<a class="headerlink" href="#w10-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Zipping and unzipping lists and iterables</p></li>
+<li><p>迭代器工具(itertools)-Python Standard Library</p></li>
+<li><p>Sliding windows (n-grams) using zip and iterators</p></li>
+<li><p>time.sleep() : 讓程式暫停幾秒鐘(需先匯入time模組)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="exception">
+<h2>第11週(11/22)-例外處理 (Exception)<a class="headerlink" href="#exception" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w11-essential">
+<h3>W11 Essential-基本的<a class="headerlink" href="#w11-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: 字典(dictionary)</p></li>
+<li><p>Process: 流程控制：</p></li>
+<li><p>Output:</p></li>
+</ul>
+</div>
+<div class="section" id="w11-advanced">
+<h3>W11 Advanced-進階的<a class="headerlink" href="#w11-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>使用lambda函數</p></li>
+<li><p>Inverting a dictionary using zip</p></li>
+<li><p>生成式(Comprehension)</p></li>
+<li><p>eval()和exec()函數</p></li>
+<li><p>並行、平行與非同步</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="generator">
+<h2>第12週(11/29)-生成器(Generator)<a class="headerlink" href="#generator" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w12-essential">
+<h3>W12 Essential-基本的<a class="headerlink" href="#w12-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Input: 集合(set)</p></li>
+<li><p>Process: 迴圈控制Loop controls(break, continue pass ), 例外處理 (Exception)</p></li>
+<li><p>Output:</p></li>
+</ul>
+</div>
+<div class="section" id="w12-advanced">
+<h3>W12 Advanced-進階的<a class="headerlink" href="#w12-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Loop with zip</p></li>
+<li><p>例外處理 (Exception)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="m2test">
+<h2>第13週(12/6)-M2Test模組二測驗<a class="headerlink" href="#m2test" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://assets.website-files.com/5e875053aa63f43b4cb8c9d2/5e9306d896104684f079b7c6_training.png" /></p>
+</div>
+</div>
+<div class="section" id="ee300046">
+<h1>基礎程式設計(三)-EE300046<a class="headerlink" href="#ee300046" title="Permalink to this headline">¶</a></h1>
+<p>Fundamental Computer Programming(3)</p>
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/heds-part-three-1598021900.png" alt="drawing" height="100"/><div class="section" id="id5">
+<h2>第14週(12/13)-函數(1)定義、呼叫和傳回值<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w14-essential">
+<h3>W14 Essential-基本的<a class="headerlink" href="#w14-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>函數的定義、呼叫和傳回值, function definition and call</p>
+<ul>
+<li><p>參數預設資料</p></li>
+<li><p>參數名稱對應</p></li>
+<li><p>全域與區域變數</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="w14-advanced">
+<h3>W14 Advanced-進階的<a class="headerlink" href="#w14-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>亂數(random)-Python Standard Library</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>第15週(12/20)-函數(2):遞迴函數,預設參數, 多重傳回值<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w15-essential">
+<h3>W15 Essential-基本的<a class="headerlink" href="#w15-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>遞迴函數 (Recursion),</p></li>
+<li><p>函數的預設參數</p></li>
+<li><p>函數的多重傳回值</p></li>
+<li><p>函數的呼叫</p>
+<ul>
+<li><p>呼叫任意長度參數(函數呼叫的*t參數型式)</p></li>
+<li><p>呼叫任意長度參數(函數呼叫的**t參數型式)</p></li>
+<li><p>任意長度的參數(函數定義的*t參數型式)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="w15-advanced">
+<h3>W15 Advanced-進階的<a class="headerlink" href="#w15-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>日誌(logging)-Python Standard Library</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="class">
+<h2>第16週(12/27)-類別(Class)<a class="headerlink" href="#class" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w16-essential">
+<h3>W16 Essential-基本的<a class="headerlink" href="#w16-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>類別(Class)</p></li>
+<li><p>裝飾詞(Decorator)</p></li>
+</ul>
+</div>
+<div class="section" id="w16-advanced">
+<h3>W16 Advanced-進階的<a class="headerlink" href="#w16-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>正規表示式(Regular Expression)-Python Standard Library</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="module">
+<h2>第17週(1/3)-模組(Module)<a class="headerlink" href="#module" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="w17-essential">
+<h3>W17 Essential-基本的<a class="headerlink" href="#w17-essential" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>模組(Module)</p></li>
+</ul>
+</div>
+<div class="section" id="w17-advanced">
+<h3>W17 Advanced-進階的<a class="headerlink" href="#w17-advanced" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>時間(Time)-Python Standard Library</p></li>
+<li><p>日期(Datetime)-Python Standard Library</p></li>
+<li><p>日曆(calendar)-Python Standard Library</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="m3test">
+<h2>第18週(1/10)-M3Test模組三測驗<a class="headerlink" href="#m3test" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://assets.website-files.com/5e875053aa63f43b4cb8c9d2/5e9306d896104684f079b7c6_training.png" /></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Welcome to your Jupyter Book</a>
+    <a class='right-next' id="next-link" href="AUP110_A2_KissipoLearning.html" title="next page">啟思博學習法(KissipoLearning)：簡簡單單學會寫程式</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Hsueh-Ting Chu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

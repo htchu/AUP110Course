@@ -1,0 +1,854 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AU Fundamentals of Python Programming-W3 &#8212; AUP110-Fundamentals of Programming</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.5f77b4aec8189eecf79907ce328c390d.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">AUP110-Fundamentals of Programming</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Syllabus
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A1_Syllabus.html">
+   基礎程式設計(一)-EE300044
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A2_KissipoLearning.html">
+   啟思博學習法(KissipoLearning)：簡簡單單學會寫程式
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A3_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A4_About_Python.html">
+   About_Python 關於Python程式設計
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_A5_ProgrammingTerms.html">
+   程式相關語彙 Programming vocabulary
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Notebooks
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W1_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W3_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W4_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Exercise.html">
+   計算score.txt分數在0-40, 41-59, 60-80, 80-100的人數
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W6_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Exercise.html">
+   AU Fundamentals of Python Programming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_W7_Notebook.html">
+   亞洲大學基礎程式設計教材(AUP110-Fundamentals of Programming)
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Module-1 Questions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_M0_Hints.html">
+   AU Fundamentals of Python Programming-110-考試重點提示
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="AUP110_M1_Problems.html">
+   AU Fundamentals of Python Programming-110-M1題庫(32)
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/AUP110_W5_Notebook.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAUP110_W5_Notebook.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/AUP110_W5_Notebook.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-1-1-print">
+   Topic 1(主題1)-字串和print()的參數
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1-hello-world-with">
+     Step 1: Hello World with 其他參數
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2-escape-sequence">
+     Step 2: Escape Sequence (逸出序列)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3">
+     Step 3: 使用 字串尾部的\來建立長字串
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-4">
+     Step 4: 使用六個雙引號來建立長字串 ‘’’ … ‘’’ 或 “”” … “””
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-2-2">
+   Topic 2(主題2)-型別轉換函數
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-5">
+     Step 5: 輸入變數的值
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-6-python">
+     Step 6: Python 型別轉換函數
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-3-3">
+   Topic 3(主題3)-索引和切片
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-8-indexing">
+     Step 8: 索引(Indexing)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-9-slicing">
+     Step 9: 切片(Slicing)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-4-4">
+   Topic 4(主題4)-格式化輸出
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-10-formatting">
+     Step 10: %-formatting 格式化列印
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-11-str-format-python-2-6">
+     Step 11: str-format（Python 2.6+）格式化列印
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-12-f-string-python-3-6">
+     Step 12: f-string （Python 3.6+）格式化列印
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="au-fundamentals-of-python-programming-w3">
+<h1>AU Fundamentals of Python Programming-W3<a class="headerlink" href="#au-fundamentals-of-python-programming-w3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="topic-1-1-print">
+<h2>Topic 1(主題1)-字串和print()的參數<a class="headerlink" href="#topic-1-1-print" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1-hello-world-with">
+<h3>Step 1: Hello World with 其他參數<a class="headerlink" href="#step-1-hello-world-with" title="Permalink to this headline">¶</a></h3>
+<p>sep = “…” 列印分隔 end=”” 列印結尾</p>
+<ul class="simple">
+<li><p>sep:   string inserted between values, default a space.</p></li>
+<li><p>end:   string appended after the last value, default a newline.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span> <span class="c1">#&#39;Hello World!&#39; is the same as &quot;Hello World!&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello World!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span> <span class="c1">#註解是不會執行的</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Help on built-in function print in module builtins:
+
+print(...)
+    print(value, ..., sep=&#39; &#39;, end=&#39;\n&#39;, file=sys.stdout, flush=False)
+    
+    Prints the values to a stream, or to sys.stdout by default.
+    Optional keyword arguments:
+    file:  a file-like object (stream); defaults to the current sys.stdout.
+    sep:   string inserted between values, default a space.
+    end:   string appended after the last value, default a newline.
+    flush: whether to forcibly flush the stream.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello &#39;</span><span class="o">+</span><span class="s1">&#39;World!&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="s2">&quot;World&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;+&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello World!
+Hello+World
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span>  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;World!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">);</span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;World&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello
+World!
+Hello World
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-2-escape-sequence">
+<h3>Step 2: Escape Sequence (逸出序列)<a class="headerlink" href="#step-2-escape-sequence" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>\newline	Ignored</p></li>
+<li><p>\	Backslash ()</p></li>
+<li><p>‘	Single quote (‘)</p></li>
+<li><p>”	Double quote (“)</p></li>
+<li><p>\a	ASCII Bell (BEL)</p></li>
+<li><p>\b	ASCII Backspace (BS)</p></li>
+<li><p>\n	ASCII Linefeed (LF)</p></li>
+<li><p>\r	ASCII Carriage Return (CR)</p></li>
+<li><p>\t	ASCII Horizontal Tab (TAB)</p></li>
+<li><p>\ooo	ASCII character with octal value ooo</p></li>
+<li><p>\xhh…	ASCII character with hex value hh…</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello</span><span class="se">\n</span><span class="s2">World!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="s2">&quot;World!&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Hello
+World!
+Hello
+World!
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">txt</span> <span class="o">=</span> <span class="s2">&quot;We are the so-called </span><span class="se">\&quot;</span><span class="s2">Vikings</span><span class="se">\&quot;</span><span class="s2"> from the north.&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We are the so-called &quot;Vikings&quot; from the north.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-3">
+<h3>Step 3: 使用 字串尾部的\來建立長字串<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iPhone11</span><span class="o">=</span><span class="s1">&#39;iPhone 11是由蘋果公司設計和銷售的智能手機，為第13代iPhone系列智能手機之一，亦是iPhone XR的後繼機種。</span><span class="se">\</span>
+<span class="s1">其在2019年9月10日於蘋果園區史蒂夫·喬布斯劇院由CEO蒂姆·庫克隨iPhone 11 Pro及iPhone 11 Pro Max一起發佈，</span><span class="se">\</span>
+<span class="s1">並於2019年9月20日在世界大部分地區正式發售。其採用類似iPhone XR的玻璃配鋁金屬設計；</span><span class="se">\</span>
+<span class="s1">具有6.1英吋Liquid Retina HD顯示器，配有Face ID；並採用由蘋果自家設計的A13仿生晶片，</span><span class="se">\</span>
+<span class="s1">帶有第三代神經網絡引擎。機器能夠防濺、耐水及防塵，在最深2米的水下停留時間最長可達30分鐘。&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iPhone11</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>iPhone 11是由蘋果公司設計和銷售的智能手機，為第13代iPhone系列智能手機之一，亦是iPhone XR的後繼機種。其在2019年9月10日於蘋果園區史蒂夫·喬布斯劇院由CEO蒂姆·庫克隨iPhone 11 Pro及iPhone 11 Pro Max一起發佈，並於2019年9月20日在世界大部分地區正式發售。其採用類似iPhone XR的玻璃配鋁金屬設計；具有6.1英吋Liquid Retina HD顯示器，配有Face ID；並採用由蘋果自家設計的A13仿生晶片，帶有第三代神經網絡引擎。機器能夠防濺、耐水及防塵，在最深2米的水下停留時間最長可達30分鐘。
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-4">
+<h3>Step 4: 使用六個雙引號來建立長字串 ‘’’ … ‘’’ 或 “”” … “””<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iPhone11</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">iPhone 11是由蘋果公司設計和銷售的智能手機，為第13代iPhone系列智能手機之一，亦是iPhone XR的後繼機種。</span>
+<span class="s1">其在2019年9月10日於蘋果園區史蒂夫·喬布斯劇院由CEO蒂姆·庫克隨iPhone 11 Pro及iPhone 11 Pro Max一起發佈，</span>
+<span class="s1">並於2019年9月20日在世界大部分地區正式發售。其採用類似iPhone XR的玻璃配鋁金屬設計；</span>
+<span class="s1">具有6.1英吋Liquid Retina HD顯示器，配有Face ID；並採用由蘋果自家設計的A13仿生晶片，</span>
+<span class="s1">帶有第三代神經網絡引擎。機器能夠防濺、耐水及防塵，在最深2米的水下停留時間最長可達30分鐘。&#39;&#39;&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iPhone11</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>iPhone 11是由蘋果公司設計和銷售的智能手機，為第13代iPhone系列智能手機之一，亦是iPhone XR的後繼機種。
+其在2019年9月10日於蘋果園區史蒂夫·喬布斯劇院由CEO蒂姆·庫克隨iPhone 11 Pro及iPhone 11 Pro Max一起發佈，
+並於2019年9月20日在世界大部分地區正式發售。其採用類似iPhone XR的玻璃配鋁金屬設計；
+具有6.1英吋Liquid Retina HD顯示器，配有Face ID；並採用由蘋果自家設計的A13仿生晶片，
+帶有第三代神經網絡引擎。機器能夠防濺、耐水及防塵，在最深2米的水下停留時間最長可達30分鐘。
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">iPhone11</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">iPhone 11是由蘋果公司設計和銷售的智能手機，為第13代iPhone系列智能手機之一，亦是iPhone XR的後繼機種。</span>
+<span class="s2">其在2019年9月10日於蘋果園區史蒂夫·喬布斯劇院由CEO蒂姆·庫克隨iPhone 11 Pro及iPhone 11 Pro Max一起發佈，</span>
+<span class="s2">並於2019年9月20日在世界大部分地區正式發售。其採用類似iPhone XR的玻璃配鋁金屬設計；</span>
+<span class="s2">具有6.1英吋Liquid Retina HD顯示器，配有Face ID；並採用由蘋果自家設計的A13仿生晶片，</span>
+<span class="s2">帶有第三代神經網絡引擎。機器能夠防濺、耐水及防塵，在最深2米的水下停留時間最長可達30分鐘。&quot;&quot;&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">iPhone11</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>iPhone 11是由蘋果公司設計和銷售的智能手機，為第13代iPhone系列智能手機之一，亦是iPhone XR的後繼機種。
+其在2019年9月10日於蘋果園區史蒂夫·喬布斯劇院由CEO蒂姆·庫克隨iPhone 11 Pro及iPhone 11 Pro Max一起發佈，
+並於2019年9月20日在世界大部分地區正式發售。其採用類似iPhone XR的玻璃配鋁金屬設計；
+具有6.1英吋Liquid Retina HD顯示器，配有Face ID；並採用由蘋果自家設計的A13仿生晶片，
+帶有第三代神經網絡引擎。機器能夠防濺、耐水及防塵，在最深2米的水下停留時間最長可達30分鐘。
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="topic-2-2">
+<h2>Topic 2(主題2)-型別轉換函數<a class="headerlink" href="#topic-2-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-5">
+<h3>Step 5: 輸入變數的值<a class="headerlink" href="#step-5" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please input your name：&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, &#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>   <span class="c1">#列印變數的型別</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_850</span><span class="o">/</span><span class="mf">1873078738.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please input your name：&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, &#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>   <span class="c1">#列印變數的型別</span>
+
+<span class="nn">~/.local/lib/python3.8/site-packages/ipykernel/kernelbase.py</span> in <span class="ni">raw_input</span><span class="nt">(self, prompt)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1001</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1002</span><span class="s2">         if not self._allow_stdin:</span>
+<span class="ne">-&gt; </span><span class="mi">1003</span><span class="s2">             raise StdinNotImplementedError(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1004</span><span class="s2">                 &quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1005</span><span class="s2">             )</span>
+
+<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-6-python">
+<h3>Step 6: Python 型別轉換函數<a class="headerlink" href="#step-6-python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>int()    #變整數</p></li>
+<li><p>float()  #變浮點數</p></li>
+<li><p>str()    #變字串</p></li>
+<li><p>變數名稱=int(字串變數)</p></li>
+<li><p>變數名稱=str(數值變數</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#變數宣告</span>
+<span class="n">varA</span> <span class="o">=</span> <span class="mi">66</span> <span class="c1">#宣告一個整數變數</span>
+<span class="n">varB</span> <span class="o">=</span> <span class="mf">1.68</span> <span class="c1">#宣告一個有小數的變數(電腦叫浮點數)</span>
+<span class="n">varC</span> <span class="o">=</span> <span class="s1">&#39;GoPython&#39;</span> <span class="c1">#宣告一個字串變數</span>
+<span class="n">varD</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">varA</span><span class="p">)</span> <span class="c1">#將整數88轉成字串的88</span>
+<span class="n">varE</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">varB</span><span class="p">)</span> <span class="c1">#將浮點數1.68轉成字串的1.68</span>
+<span class="n">varF</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="s1">&#39;2019&#39;</span><span class="p">)</span> <span class="c1">#將字串2019轉作整數數值的2019</span>
+<span class="n">varG</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;3.14&#39;</span><span class="p">)</span> <span class="c1">#將字串3.14轉作浮點數數值的3.14</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Please input your score：&#39;</span><span class="p">)</span>
+<span class="n">score</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>   <span class="c1">#列印變數的型別</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="topic-3-3">
+<h2>Topic 3(主題3)-索引和切片<a class="headerlink" href="#topic-3-3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello, World!&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1">#Indexing</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span> <span class="c1">#Slicing</span>
+</pre></div>
+</div>
+<div class="section" id="step-8-indexing">
+<h3>Step 8: 索引(Indexing)<a class="headerlink" href="#step-8-indexing" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello Wang&quot;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span> <span class="c1">#Indexing</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello Wang&quot;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span> <span class="c1">#Negative Indexing</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-9-slicing">
+<h3>Step 9: 切片(Slicing)<a class="headerlink" href="#step-9-slicing" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello Wang&quot;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span> <span class="c1">#Slicing</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello Wang&quot;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span> <span class="c1">#Slicing</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello Wang&quot;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[:</span><span class="mi">5</span><span class="p">])</span> <span class="c1">#Slicing</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello Wang&quot;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">6</span><span class="p">:</span><span class="o">-</span><span class="mi">2</span><span class="p">])</span> <span class="c1">#Slicing</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Hello Wang&quot;</span>
+<span class="n">d</span> <span class="o">=</span> <span class="s2">&quot;0123456789&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">:])</span> <span class="c1">#Slicing</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="topic-4-4">
+<h2>Topic 4(主題4)-格式化輸出<a class="headerlink" href="#topic-4-4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">435</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mf">59.058</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Art: </span><span class="si">%5d</span><span class="s1">, Price per Unit: </span><span class="si">%8.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>          <span class="c1">#%-formatting 格式化列印</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Art: </span><span class="si">{0:5d}</span><span class="s2">, Price per Unit: </span><span class="si">{1:8.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">B</span><span class="p">))</span> <span class="c1">#str-format（Python 2.6+）</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Art:</span><span class="si">{</span><span class="n">A</span><span class="si">:</span><span class="s2">5d</span><span class="si">}</span><span class="s2">, Price per Unit: </span><span class="si">{</span><span class="n">B</span><span class="si">:</span><span class="s2">8.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>             <span class="c1">#f-string （Python 3.6+）</span>
+</pre></div>
+</div>
+<div class="section" id="step-10-formatting">
+<h3>Step 10: %-formatting 格式化列印<a class="headerlink" href="#step-10-formatting" title="Permalink to this headline">¶</a></h3>
+<p>透過% 運算符號，將在元組（tuple）中的一組變量依照指定的格式化方式輸出。如 %s（字串）、%d （十進位整數）、 %f（浮點數）</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">435</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mf">59.058</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Art: </span><span class="si">%5d</span><span class="s1">, Price per Unit: </span><span class="si">%8.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">B</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">FirstName</span> <span class="o">=</span> <span class="s2">&quot;Mary&quot;</span><span class="p">;</span> <span class="n">LastName</span><span class="o">=</span> <span class="s2">&quot;Lin&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;She is </span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span><span class="p">(</span><span class="n">FirstName</span><span class="p">,</span> <span class="n">LastName</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>She is Mary Lin
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-11-str-format-python-2-6">
+<h3>Step 11: str-format（Python 2.6+）格式化列印<a class="headerlink" href="#step-11-str-format-python-2-6" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">435</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mf">59.058</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Art: </span><span class="si">{0:5d}</span><span class="s2">, Price per Unit: </span><span class="si">{1:8.2f}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">435</span><span class="p">,</span> <span class="mf">59.058</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">FirstName</span> <span class="o">=</span> <span class="s2">&quot;Mary&quot;</span><span class="p">;</span> <span class="n">LastName</span><span class="o">=</span> <span class="s2">&quot;Lin&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;She is </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FirstName</span><span class="p">,</span> <span class="n">LastName</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>She is Mary Lin
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="step-12-f-string-python-3-6">
+<h3>Step 12: f-string （Python 3.6+）格式化列印<a class="headerlink" href="#step-12-f-string-python-3-6" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">A</span> <span class="o">=</span> <span class="mi">435</span><span class="p">;</span> <span class="n">B</span> <span class="o">=</span> <span class="mf">59.058</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Art:</span><span class="si">{</span><span class="n">A</span><span class="si">:</span><span class="s2">5d</span><span class="si">}</span><span class="s2">, Price per Unit: </span><span class="si">{</span><span class="n">B</span><span class="si">:</span><span class="s2">8.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">FirstName</span> <span class="o">=</span> <span class="s2">&quot;Mary&quot;</span><span class="p">;</span> <span class="n">LastName</span><span class="o">=</span> <span class="s2">&quot;Lin&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;She is </span><span class="si">{</span><span class="n">FirstName</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">LastName</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>She is Mary Lin
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Hsueh-Ting Chu<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
